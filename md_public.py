@@ -186,7 +186,7 @@ if (selected == 'Lung Cancer Prediction'):
         Chest_pain = st.text_input('Chest main')
         
         # code for Prediction
-    lung_diagnosis = ''
+    lung_cancer = ''
     
     # creating a button for Prediction
     
@@ -200,7 +200,7 @@ if (selected == 'Lung Cancer Prediction'):
         else:
           lung_diagnosis = 'The person is not having Lung Cancer'
         
-    st.success(lung_diagnosis)
+    st.success(lung_cancer)
     
    
     
