@@ -145,7 +145,7 @@ if (selected == 'Lung Cancer Prediction'):
     # page title
     st.title('Lung Cancer Prediction using ML')
     # getting the input data from the user
-    col1, col2, col3, col4, col5 = st.columns(3)
+    col1, col2, col3, col4, col5 = st.columns(5)
    
     with col1:
         Gender = st.text_input('male or female')
