@@ -176,13 +176,16 @@ if (selected == 'Lung Cancer Prediction'):
         
     with col1:
         Alcohol_consuming = st.text_input('Alcohol Consuming')
-    
+        
     with col2:
-        Shortness_of_breath = st.text_input('Shortness of breath')
+        Coughing = st.text_input('Coughing')
+    
     with col3:
+        Shortness_of_breath = st.text_input('Shortness of breath')
+    with col4:
         Swallowing_Difficulty = st.text_input('Swallowing difficulty')
         
-    with col4:
+    with col5:
         Chest_pain = st.text_input('Chest main')
         
         # code for Prediction
