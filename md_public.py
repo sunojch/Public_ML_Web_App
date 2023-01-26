@@ -148,42 +148,42 @@ if (selected == 'Lung Cancer Prediction'):
     col1, col2, col3, col4, col5 = st.columns(5)
    
     with col1:
-        Gender = st.text_input('male or female')
+        Gender = st.text_input('Gender')
         
     with col2:
         Age = st.text_input('Age')
     
     with col3:
-        Smoking = st.text_input('Yes or No')
+        Smoking = st.text_input('Smoking')
     with col4:
-        Yellow_fingers = st.text_input('Yes or No')
+        Yellow_fingers = st.text_input('Yellow Fingers')
         
     with col5:
-        Anxiety = st.text_input('Yes or No')
+        Anxiety = st.text_input('Anxiety')
     
     with col1:
-        Peer_Pressure = st.text_input('Yes or No')
+        Peer_Pressure = st.text_input('Peer Pressure')
     with col2:
-        Chronic_disease = st.text_input('Yes or No')
+        Chronic_disease = st.text_input('Chronic Disease')
         
     with col3:
-        Fatigue = st.text_input('Yes or No')
+        Fatigue = st.text_input('Fatigue')
     
     with col4:
-        Allergy = st.text_input('Yes or No')
+        Allergy = st.text_input('Allergy')
     with col5:
-        Wheezing = st.text_input('Yes or No')
+        Wheezing = st.text_input('Wheezing')
         
     with col1:
-        Alcohol_consuming = st.text_input('Yes or No')
+        Alcohol_consuming = st.text_input('Alcohol Consuming')
     
     with col2:
-        Shortness_of_breath = st.text_input('Yes or No')
+        Shortness_of_breath = st.text_input('Shortness of breath')
     with col3:
-        Swallowing_Difficulty = st.text_input('Yes or No')
+        Swallowing_Difficulty = st.text_input('Swallowing difficulty')
         
     with col4:
-        Chest_pain = st.text_input('Yes or No')
+        Chest_pain = st.text_input('Chest main')
         
         # code for Prediction
     lung_diagnosis = ''
