@@ -12,7 +12,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('trained_model.sav', 'rb'))
+lung_cancer_model = pickle.load(open('trained_model.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
