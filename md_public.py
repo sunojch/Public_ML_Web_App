@@ -186,7 +186,7 @@ if (selected == 'Lung Cancer Prediction'):
         Swallowing_Difficulty = st.text_input('Swallowing difficulty')
         
     with col5:
-        Chest_pain = st.text_input('Chest main')
+        Chest_pain = st.text_input('Chest pain')
         
         # code for Prediction
     lung_cancer = ''
