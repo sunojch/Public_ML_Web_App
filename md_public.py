@@ -145,7 +145,7 @@ if (selected == 'Lung Cancer Prediction'):
     # page title
     st.title('Lung Cancer Prediction using ML')
     # getting the input data from the user
-    col1, col2, col3 = st.columns(5)
+    col1, col2, col3, col4, col5 = st.columns(3)
    
     with col1:
         Gender = st.text_input('male or female')
@@ -155,34 +155,34 @@ if (selected == 'Lung Cancer Prediction'):
     
     with col3:
         Smoking = st.text_input('Yes or No')
-    with col1:
+    with col4:
         Yellow_fingers = st.text_input('Yes or No')
         
-    with col2:
+    with col5:
         Anxiety = st.text_input('Yes or No')
     
-    with col3:
-        Peer_Pressure = st.text_input('Yes or No')
     with col1:
+        Peer_Pressure = st.text_input('Yes or No')
+    with col2:
         Chronic_disease = st.text_input('Yes or No')
         
-    with col2:
+    with col3:
         Fatigue = st.text_input('Yes or No')
     
-    with col3:
+    with col4:
         Allergy = st.text_input('Yes or No')
-    with col1:
+    with col5:
         Wheezing = st.text_input('Yes or No')
         
-    with col2:
+    with col1:
         Alcohol_consuming = st.text_input('Yes or No')
     
-    with col3:
+    with col2:
         Shortness_of_breath = st.text_input('Yes or No')
-    with col1:
+    with col3:
         Swallowing_Difficulty = st.text_input('Yes or No')
         
-    with col2:
+    with col4:
         Chest_pain = st.text_input('Yes or No')
         
         # code for Prediction
