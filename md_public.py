@@ -194,9 +194,9 @@ if (selected == 'Lung Cancer Prediction'):
     # creating a button for Prediction
     
     if st.button('Lung Cancer Test Result'):
-        Lung_prediction = Lung_Cancer_model.predict([[Gender, Age, Smoking, Yellow_fingers, Anxiety, Peer_Pressure, Chronic_disease, Fatigue, Allergy, Wheezing, Alcohol_consuming, Shortness_of_breath, Swallowing_Difficulty, Chest_pain]])
+        lung_prediction = lung_cancer_model.predict([[Gender, Age, Smoking, Yellow_fingers, Anxiety, Peer_Pressure, Chronic_disease, Fatigue, Allergy, Wheezing, Alcohol_consuming, Shortness_of_breath, Swallowing_Difficulty, Chest_pain]])
         
-        if (Lung_prediction[0] == 1):
+        if (lung_prediction[0] == 1):
           lung_diagnosis = 'The person is having Lung Cancer'
             
           diab_diagnosis = 'The person is diabetic'
