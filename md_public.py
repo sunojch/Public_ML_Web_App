@@ -150,45 +150,45 @@ if (selected == 'Lung Cancer Prediction'):
     col1, col2, col3, col4, col5 = st.columns(5)
    
     with col1:
-        Gender = st.text_input('Gender')
+       GENDER = st.text_input('Gender')
         
     with col2:
-        Age = st.text_input('Age')
+        AGE = st.text_input('Age')
     
     with col3:
-        Smoking = st.text_input('Smoking')
+        SMOKING = st.text_input('Smoking')
     with col4:
-        Yellow_fingers = st.text_input('Yellow Fingers')
+        YELLOW_FINGERS = st.text_input('Yellow Fingers')
         
     with col5:
-        Anxiety = st.text_input('Anxiety')
+        ANXIETY = st.text_input('Anxiety')
     
     with col1:
-        Peer_Pressure = st.text_input('Peer Pressure')
+        PEER_PRESSURE = st.text_input('Peer Pressure')
     with col2:
-        Chronic_disease = st.text_input('Chronic Disease')
+        CHRONIC_DISEASE = st.text_input('Chronic Disease')
         
     with col3:
-        Fatigue = st.text_input('Fatigue')
+        FATIGUE = st.text_input('Fatigue')
     
     with col4:
-        Allergy = st.text_input('Allergy')
+        ALLERGY = st.text_input('Allergy')
     with col5:
-        Wheezing = st.text_input('Wheezing')
+        WHEEZING = st.text_input('Wheezing')
         
     with col1:
-        Alcohol_consuming = st.text_input('Alcohol Consuming')
+        ALCOHOL_CONSU1ING = st.text_input('Alcohol Consuming')
         
     with col2:
-        Coughing = st.text_input('Coughing')
+        COUGHING = st.text_input('Coughing')
     
     with col3:
-        Shortness_of_breath = st.text_input('Shortness of breath')
+        SHORTNESS_OF_BREATH = st.text_input('Shortness of breath')
     with col4:
-        Swallowing_Difficulty = st.text_input('Swallowing difficulty')
+        SWALLOWING_DIFFICULTY = st.text_input('Swallowing difficulty')
         
     with col5:
-        Chest_pain = st.text_input('Chest pain')
+        CHEST_PAIN = st.text_input('Chest pain')
         
         # code for Prediction
     lung_cancer = ''
@@ -196,7 +196,7 @@ if (selected == 'Lung Cancer Prediction'):
     # creating a button for Prediction
     
     if st.button('Lung Cancer Test Result'):
-        lung_prediction = lung_cancer_model.predict([[Gender, Age, Smoking, Yellow_fingers, Anxiety, Peer_Pressure, Chronic_disease, Fatigue, Allergy, Wheezing, Alcohol_consuming, Coughing, Shortness_of_breath, Swallowing_Difficulty, Chest_pain]])
+        lung_prediction = lung_cancer_model.predict([[GENDER, AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, CHRONIC_DISEASE, FATIGUE , ALLERGY , WHEEZING, ALCOHOL_CONSU1ING, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN]])
         
         if (lung_prediction[0] == 1):
           lung_diagnosis = 'The person is having Lung Cancer'
